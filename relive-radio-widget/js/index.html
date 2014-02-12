@@ -1,0 +1,30 @@
+ <html>
+ <head>
+ 
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+
+<script>
+$(document).ready( function() { 
+  $('#YourSelectList').bind('change', function (e) { 
+    if( $('#YourSelectList').val() == 241) {
+      $('#OtherDiv').show();
+    }
+    else{
+      $('#OtherDiv').hide();
+    }         
+  });  
+});
+</script>
+ 
+ </head>
+ <body>
+<select id="YourSelectList">
+    <option value="1">Option 1</option>
+    <option value="241">Other</option>
+  </select>
+  <div id="OtherDiv" style="display:none;">
+  Other: <input id="OtherCountry"/>
+  </div>
+  
+</body>
+</html>
